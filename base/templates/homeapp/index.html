@@ -1,0 +1,564 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+
+  <!--======= HOME MAIN SLIDER =========-->
+  <section class="home-slider"> 
+    <!-- Slider Loader -->
+    <div id="loader" class="hom-slie">
+      <div class="tp-loader spinner0"> <span class="dot1"></span> <span class="dot2"></span> <span class="bounce1"></span> <span class="bounce2"></span> <span class="bounce3"></span> </div>
+    </div>
+    
+    <!-- SLIDE Start -->
+    <div class="tp-banner-container">
+      <div class="tp-banner">
+        <ul>
+
+
+          <!-- SLIDE  -->
+          <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
+            <!-- MAIN IMAGE --> 
+            <img src="{% static 'images/slides/wallpaper.jpg' %}"  alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+            <!-- LAYERS --> 
+            
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption sfb font-oswald text-white  text-shadow tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="-40" 
+                data-speed="500" 
+                data-start="500" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-elementdelay="0.0" 
+                data-endelementdelay="0" 
+                data-endspeed="300"
+                style="z-index: 5; font-size:50px; font-weight:500;">WE DO BIG THINGS WITH NEW IDEAS</div>
+            
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption sfb font-bold text-center tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="40" 
+                data-speed="500" 
+                data-start="1000" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-elementdelay="0.0" 
+                data-endelementdelay="0.0" 
+                data-endspeed="300" 
+                style="z-index: 6; color:#fff; font-size:18px;">The Love Boat soon will be making another run the Love Boat promises something everyone</div>
+            
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption sfb font-bold text-center tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="50" 
+                data-speed="500" 
+                data-start="1500" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-elementdelay="0.0" 
+                data-endelementdelay="0.0" 
+                data-endspeed="300" 
+                style="z-index: 6; color:#fff; font-size:18px;"> Today still wanted by the government they survive as soldiers of fortune.</div>
+            
+            <!-- LAYER NR. 4 -->
+            <div class="tp-caption font-lora letter-space-4 sfb tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="180" 
+                data-speed="500" 
+                data-start="1900" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-elementdelay="0.1" 
+                data-endelementdelay="0.1" 
+                data-endspeed="300" 
+                style="z-index: 7;"><a href="#." class="btn btn-blue margin-right-20">READ MORE</a> <a href="#." class="btn btn-white margin-left-20">GET START</a> </div>
+          </li>
+          <!-- SLIDE  -->
+
+
+
+          <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
+            <!-- MAIN IMAGE --> 
+            <img src="{% static 'images/slides/slide-2.jpg' %}"  alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+            <!-- LAYERS --> 
+            
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption sfb font-oswald text-white text-shadow tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="-40" 
+                data-speed="500" 
+                data-start="500" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-elementdelay="0.0" 
+                data-endelementdelay="0" 
+                data-endspeed="300"
+                style="z-index: 5; font-size:50px; font-weight:500;">WE DO BIG THINGS WITH NEW IDEAS</div>
+            
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption sfb font-bold text-center tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="40" 
+                data-speed="500" 
+                data-start="1000" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-elementdelay="0.0" 
+                data-endelementdelay="0.0" 
+                data-endspeed="300" 
+                style="z-index: 6; color:#fff; font-size:18px;">The Love Boat soon will be making another run the Love Boat promises something everyone</div>
+            
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption sfb font-bold text-center tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="50" 
+                data-speed="500" 
+                data-start="1500" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-elementdelay="0.0" 
+                data-endelementdelay="0.0" 
+                data-endspeed="300" 
+                style="z-index: 6; color:#fff; font-size:18px;"> Today still wanted by the government they survive as soldiers of fortune.</div>
+            
+            <!-- LAYER NR. 4 -->
+            <div class="tp-caption font-lora letter-space-4 sfb tp-resizeme" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="180" 
+                data-speed="500" 
+                data-start="1900" 
+                data-easing="Power3.easeInOut" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-elementdelay="0.1" 
+                data-endelementdelay="0.1" 
+                data-endspeed="300" 
+                style="z-index: 7;"><a href="#." class="btn btn-blue margin-right-20">READ MORE</a> <a href="#." class="btn btn-white margin-left-20">GET START</a> </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Content --> 
+  <div id="content"> 
+    
+    <!--what we do-->
+    <section class="welcome padding-top-100 padding-bottom-100">
+      <div class="container"> 
+        <div class="row">
+         <div class="col-md-12 text-center">
+           <div class="Biswas-secton-area">
+             <div class="Biswas-head">
+              <span>Biswas Group Ltd</span>
+              <h1>Leading Construction Company In Bangladesh</h1>
+              <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+             </div>
+             
+             <div class="Biswas-text">
+               <p>Biswas  Group is a lLeading Construction Company In  Dhaka, Bangladesh. We started our journey in 2006 with a view to uplifting the living style of the city dwellers of the country. Since the beginning, we have been providing residential and commercial properties with outstanding architectural design and ultimate comfort of living. When it comes to maintaining quality, we put the best effort in every stage of the building project ensuring all best practices of the industry are followed.</p>
+               <a href="#">Explore About Us <i class="fas fa-angle-right"></i></a>
+             </div>
+             
+           </div>
+         </div>
+        </div>
+      </div>
+    </section> 
+    
+ 
+    
+    
+      <p  align="center">   <iframe width="1000" height="650" src="https://www.youtube.com/embed/iyJ37BdGXq4" title="YouTube video player" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      
+      
+    <!-- LATEST WORK --> 
+    <section class=" light-gray-bg padding-top-100 padding-bottom-100">
+      <div class="container"> 
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="Looking-secton-area text-center">
+              <div class="loking-head">
+               <span>Looking For The</span>
+               <h1>Luxurious Property for Sale in Dhaka</h1>
+               <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+              </div>
+              
+              <div class="looking-text">
+                <p>Find your dream property from our featured luxury properties built at prime locations in Dhaka. From this list of ongoing, upcoming and completed properties (flat / apartments), choose the one that best resonates with your heart.</p>
+              </div>
+              
+            </div>
+            <div class="padding-30px">
+            <div class="row">
+         
+
+
+          
+
+              <div class="col-md-3 col-sm-6">
+                <div class="all-area-hold">
+                  <div class="container2">
+                    <img src="{% static 'assets/BS.jpg' %}" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="head-of text-center">
+                        <h5>Biswas OASIS</h5>
+                      </div>
+                      <ul>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-text text-center">
+                    <a href="duplex.html">Duplex Construction </a>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> 
+                      Biswas Group Ltd
+                      </p>
+                  </div>
+              </div>
+              </div>
+              
+              <div class="col-md-3 col-sm-6">
+                <div class="all-area-hold">
+                  <div class="container2">
+                    <img src="assets/Sylhet.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="head-of text-center">
+                        <h5>Biswas OASIS</h5>
+                      </div>
+                      <ul>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-text text-center">
+                    <a href="HIghrisebuilding.html"> Highrise Building / Commertial Construction </a>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> 
+                     Biswas Group Ltd
+                      </p>
+                  </div>
+              </div>
+              </div>
+              
+              <div class="col-md-3 col-sm-6">
+                <div class="all-area-hold">
+                  <div class="container2">
+                    <img src="assets/BS.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="head-of text-center">
+                        <h5>Biswas OASIS</h5>
+                      </div>
+                      <ul>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-text text-center">
+                    <a href="mate.html">Materials </a>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> 
+                    Biswas Group Ltd
+                      </p>
+                  </div>
+              </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="all-area-hold">
+                  <div class="container2">
+                    <img src="{% static 'assets/uttara.jpg' %}" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="head-of text-center">
+                        <h5>Biswas OASIS</h5>
+                      </div>
+                      <ul>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-text text-center">
+                    <a href="ReadyFlat.html">      Ready Flat</a>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> 
+                    Biswas Group Ltd
+             
+                    </p>
+                  </div>
+              </div>
+              </div>
+
+            </div>
+          </div>
+
+            <div class="veiw-property text-center">
+              <a href="#">Veiw all property <i  class="fa fa-home" aria-hidden="true"></i></a>
+            </div>
+                
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="clients padding-top-100 padding-bottom-100 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="why-Biswas-left">
+              <div class="why-Biswas text-center">
+                <span>Why Biswas Group Ltd</span>
+                <h1>Strength of the Company</h1>
+                <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+               </div>
+            </div>
+
+
+            <div class="collaps-around">
+              <div id="accordion">
+                
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Superior Quality & Architechture
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Quality comes first while setting priority for long-term or short-term plans and day-to-day activities. From material to workmanship, we strive to maintain quality in every stage in our building projects. With this great effort, we have achieved the trust of our clients that fuel our sincere efforts.
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Uncompromised Safety
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                     We design and develop buildings in line with the compliance guidelines stated in the National Building Code. We never deviate from the standards and best practices in the industry for providing safe addresses to our esteemed clients. Therefore, our buildings are capable of withstanding the code-specified natural forces like earthquakes.
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        On-Time Delivery 
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                     On-time delivery is one of our motos while dealing in real estate business. We are always committed to satisfying you with on-time delivery service.
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"> 
+            <div class="why-Biswas-left">
+              <div class="why-Biswas text-center">
+                <span>Key Business</span>
+                <h1>Achievement [at a Glance]</h1>
+                <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+               </div>
+            </div>
+            <div class="key-busines-content text-left">
+              <p>As a quality-focused real estate company, we have passed a number of prestigious milestones in a short period of time. The most valuable recognition we have achieved is the trust of our esteemed clients. Industry experts and international organizations have recognized our sincere efforts as well.</p>
+              
+            </div>
+             
+            
+          </div>
+        </div>
+    
+      </div>
+    </section>
+  </div>
+
+
+    
+    <!-- WHY CHOOSE US -->
+    <section class="padding-top-100 padding-bottom-100  ddddd">
+     
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="would-youlike">
+              <div class="youlike text-center">
+                <span>Would YouLike</span>
+                <h1>To Have a Cup Of Coffee!</h1>
+                <img src="{% static 'assets/heading-arrow-w.png' %}" alt="img">
+               </div>
+            </div>
+
+            <div class="like-contact-area text-center">
+              <ul>
+                <li>
+                  <div class="like-text-area text-left">
+                    <div class="like-content">
+                      <div class="md-img-show">
+                        <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                      </div>
+                      <div class="like-text">
+                        <p>buy a property</p>
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +880 1324-291441 </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="like-text-area text-left">
+                    <div class="like-content">
+                      <div class="md-img-show">
+                        <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                      </div>
+                      <div class="like-text">
+                        <p>customer care</p>
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +880 1324-291444 </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="like-text-area text-left">
+                    <div class="like-content">
+                      <div class="md-img-show">
+                        <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                      </div>
+                      <div class="like-text">
+                        <p>land owner</p>
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +880 1324-291441 </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+         
+
+                <li>
+                  <div class="like-text-area text-left">
+                    <div class="like-content">
+                      <div class="md-img-show">
+                        <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                      </div>
+                      <div class="like-text">
+                        <p>service area</p>
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +880 1324-291445 </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <br></br>
+    <!-- Testimonial -->
+
+{% endblock %}
