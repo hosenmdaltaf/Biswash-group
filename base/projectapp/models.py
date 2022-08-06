@@ -46,9 +46,9 @@ class Project(models.Model):
 
     def save(self, *args, **kwargs):
         # call the compress function
-        new_image = compress(self.thumnail_img)
+        new_image = compress(self.thumnail_image)
         # set self.image to new_image
-        self.thumnail_img = new_image
+        self.thumnail_image = new_image
         # save
         super().save(*args, **kwargs)
 

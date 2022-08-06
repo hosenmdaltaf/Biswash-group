@@ -207,12 +207,13 @@
          
 
 
-          
-
+          {% for cat in projects_cat %}
               <div class="col-md-3 col-sm-6">
                 <div class="all-area-hold">
                   <div class="container2">
-                    <img src="{% static 'assets/BS.jpg' %}" alt="Avatar" class="image">
+                    {% if cat.image %}
+                    <img src="{{cat.image.url}}" alt="Avatar" class="image">
+                    {% endif %}
                     <div class="overlay">
                       <div class="head-of text-center">
                         <h5>Biswas OASIS</h5>
@@ -221,158 +222,20 @@
                         <li><i class="fas fa-check"></i> Nature: Residential </li>
                         <li><i class="fas fa-check"></i> Nature: Residential</li>
                         <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
                       </ul>
                     </div>
                   </div>
                   <div class="footer-text text-center">
-                    <a href="duplex.html">Duplex Construction </a>
+                    <a href="{% url 'projectapp:catDetailspage' cat.pk %}">{{cat.name}}</a>
                     <p><i class="fa fa-home" aria-hidden="true"></i> 
                       Biswas Group Ltd
                       </p>
                   </div>
               </div>
               </div>
+              {% endfor %}
               
-              <div class="col-md-3 col-sm-6">
-                <div class="all-area-hold">
-                  <div class="container2">
-                    <img src="assets/Sylhet.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                      <div class="head-of text-center">
-                        <h5>Biswas OASIS</h5>
-                      </div>
-                      <ul>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="footer-text text-center">
-                    <a href="HIghrisebuilding.html"> Highrise Building / Commertial Construction </a>
-                    <p><i class="fa fa-home" aria-hidden="true"></i> 
-                     Biswas Group Ltd
-                      </p>
-                  </div>
-              </div>
-              </div>
-              
-              <div class="col-md-3 col-sm-6">
-                <div class="all-area-hold">
-                  <div class="container2">
-                    <img src="assets/BS.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                      <div class="head-of text-center">
-                        <h5>Biswas OASIS</h5>
-                      </div>
-                      <ul>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="footer-text text-center">
-                    <a href="mate.html">Materials </a>
-                    <p><i class="fa fa-home" aria-hidden="true"></i> 
-                    Biswas Group Ltd
-                      </p>
-                  </div>
-              </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6">
-                <div class="all-area-hold">
-                  <div class="container2">
-                    <img src="{% static 'assets/uttara.jpg' %}" alt="Avatar" class="image">
-                    <div class="overlay">
-                      <div class="head-of text-center">
-                        <h5>Biswas OASIS</h5>
-                      </div>
-                      <ul>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                        <li><i class="fas fa-check"></i> Nature: Residential </li>
-                        <li><i class="fas fa-check"></i> Nature: Residential</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="footer-text text-center">
-                    <a href="ReadyFlat.html">      Ready Flat</a>
-                    <p><i class="fa fa-home" aria-hidden="true"></i> 
-                    Biswas Group Ltd
-             
-                    </p>
-                  </div>
-              </div>
-              </div>
+  
 
             </div>
           </div>

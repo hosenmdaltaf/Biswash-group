@@ -1,0 +1,254 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <!-- SUB BANNER -->
+  <section class="sub-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>{{object.name}}</h4>
+        <hr class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          
+        </ol>
+      </div>
+    </div>
+    <div class="scroll"> <a href="#content" class="go-down"></a></div> 
+  </section>
+  
+  <!-- Content -->
+  
+  {% comment %} <div id="one" class="left-right-block service-left" style="background-image: url({{object.image.url}}) !Important;"> {% endcomment %}
+
+  <div id="one" class="left-right-block" >
+    <div class="container-flued">
+        <div class="row justify-content-end">
+
+          <div class="col-md-6">
+
+           <div >
+              <img style="width: 100%;" src="{{object.image.url}}" alt="img">
+          </div>
+
+          </div>
+
+          <div class="col-md-6">
+              <div class="col-md-12">
+                    <div class="About-assure55">
+                    <div class="About-assure-content text-center">
+                        
+                        <h1>{{object.name}}n</h1>
+                        <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+                    </div>
+                    </div>
+        
+                    <div class="About-assure-text">
+                    <p>Biswas Group set its foot in the real estate business in 2007 with a view to providing stunning homes for the contemporary city lifestyle. For more than 13 years, we have grown ourselves as a leader in the sector after serving over a thousand customers and completing over a hundred projects. ourselves as a leader in the sector after serving over a thousand customers and completing over a hundred projects.
+                    </p>
+                    <a href="contact.html">Want to Develop Your Land? Call Us Now +880 1324-291441</a>
+
+                    <p><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, nesciunt.:</b><br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus iusto blanditiis, ducimus ut ad, commodi exercitationem maxime cum excepturi quidem adipisci error. Suscipit, harum dignissimos.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum dolorum animi rerum, accusamus deserunt nisi velit neque hic beatae, reiciendis fugiat architecto veniam laudantium.</p>
+
+                    </div>
+
+                    <div class="d-lg-none">
+                        <img style="width: 100%;" src="{{object.image.url}}" alt="img">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+      </div>
+</div>
+
+
+
+     
+    <!-- Testimonial -->
+    <section class="testimonial light-gray-bg padding-top-100 padding-bottom-100">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="The-Best-area">
+              <div class="best-content text-center">
+                <span>Choose The Best</span>
+                <h1>Properties (Home | Commercial) in the City </h1>
+                <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+               </div>
+            </div>
+            <div class="choose-text text-center">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil mollitia tenetur perferendis, quas sapiente voluptas culpa voluptates adipisci expedita nostrum velit natus sit reprehenderit deserunt unde at nemo quidem!</p>
+            </div>
+
+            <div class="property-feture-area">
+
+              <div class="tab-proparty">
+                <ul class="nav  our-tab" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ongoing
+                  </a>
+                </li>
+
+         
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" 
+                  aria-controls="profile" aria-selected="false">Upcoming</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Completed
+                  </a>
+                </li>
+               
+              </ul>
+            </div>
+
+              
+            <div class="tab-content">
+
+
+
+            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="padding-30px">
+            <div class="row">
+
+
+            {% for cat in ongoingProjects  %}
+
+              <div class="col-md-3 col-sm-6">
+                <div class="all-area-hold">
+                  <div class="container2">
+                    {% if cat.thumnail_image %}
+                    <img src="{{cat.thumnail_image.url}}" alt="Avatar" class="image">
+                    {% endif %}
+                    <div class="overlay">
+                      <div class="head-of text-center">
+                        <h5>{{cat.name}}</h5>
+                      </div>
+                      {% comment %} <ul>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+
+                       
+                      </ul> {% endcomment %}
+                    </div>
+                  </div>
+                  <div class="footer-text text-center">
+                    <a href="Social Respons.html">{{cat.name}}</a>
+                    <p><i class="fa fa-home" aria-hidden="true"></i>{{cat.location}}</p>
+                  </div>
+              </div>
+              </div>
+              {% endfor %}
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="padding-30px">
+            <div class="row">
+
+
+              {% for cat in upcomingProjects %}
+
+              <div class="col-md-3 col-sm-6">
+                <div class="all-area-hold">
+                  <div class="container2">
+                    {% if cat.thumnail_image %}
+                    <img src="{{cat.thumnail_image.url}}" alt="Avatar" class="image">
+                    {% endif %}
+                    <div class="overlay">
+                      <div class="head-of text-center">
+                        <h5>{{cat.name}}</h5>
+                      </div>
+                      {% comment %} <ul>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+
+                       
+                      </ul> {% endcomment %}
+                    </div>
+                  </div>
+                  <div class="footer-text text-center">
+                    <a href="Social Respons.html">{{cat.name}}</a>
+                    <p><i class="fa fa-home" aria-hidden="true"></i>{{cat.location}}</p>
+                  </div>
+              </div>
+              </div>
+              {% endfor %}
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"><div class="padding-30px">
+            <div class="row">
+
+       
+              {% for cat in complatedProjects  %}
+
+              <div class="col-md-3 col-sm-6">
+                <div class="all-area-hold">
+                  <div class="container2">
+                    {% if cat.thumnail_image %}
+                    <img src="{{cat.thumnail_image.url}}" alt="Avatar" class="image">
+                    {% endif %}
+                    <div class="overlay">
+                      <div class="head-of text-center">
+                        <h5>{{cat.name}}</h5>
+                      </div>
+                      {% comment %} <ul>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+                        <li><i class="fas fa-check"></i> Nature: Residential</li>
+                        <li><i class="fas fa-check"></i> Nature: Residential </li>
+
+                       
+                      </ul> {% endcomment %}
+                    </div>
+                  </div>
+                  <div class="footer-text text-center">
+                    <a href="Social Respons.html">{{cat.name}}</a>
+                    <p><i class="fa fa-home" aria-hidden="true"></i>{{cat.location}}</p>
+                  </div>
+              </div>
+              </div>
+              {% endfor %}
+
+ 
+            </div>
+          </div>
+        </div>
+
+
+
+              </div>
+             
+            </div>
+
+            <div class="all-property-link text-center">
+              <a href="#">All property veiw</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+{% endblock %}

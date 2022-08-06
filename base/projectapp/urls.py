@@ -4,5 +4,7 @@ from . import views
 app_name='projectapp'
 
 urlpatterns = [
-    # path('', views.homepage, name='homepage'), 
+    path('cat/<int:pk>/', views.projectpage, name='catDetailspage'),
+    path('status/<int:pk>/', views.project_status_filter, name='project_statuspage'),  
+    
 ]
