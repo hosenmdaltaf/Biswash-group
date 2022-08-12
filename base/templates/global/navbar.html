@@ -8,7 +8,9 @@
   
   <div class="container relative">
     <header>
-      <div class="logo"> <a href="#."><img  class="img-responsive" src="{% static 'images/logo.png' %}" alt="" ></a> </div>
+      <div class="logo"> <a href="{% url 'homeapp:homepage' %}">
+        <img  class="img-responsive" src="{% static 'images/logo.png' %}" alt="" ></a> 
+      </div>
       <!-- Top bar -->
       <div class="top-bar">
         <div class="top-info">
@@ -35,68 +37,53 @@
         <!-- Navigation -->
         <nav class="navbar">
           <ul class="nav ownmenu">
-            <li> <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
+            <li> <a href="{% url 'homeapp:homepage' %}"><i class="fa fa-home" aria-hidden="true"></i>
             </a> </li> 
           
             <li > <a href="#">Corporate</a> 
              <ul class="dropdown">
-                  <li><a href="Company Profile.html">Company profile</a></li>
-                  <li><a href="Vision & Mission.html">Vission & Mission </a></li>
-                  <li><a href="Meet the Team.html">Meet The Team</a></li>
-                  <li><a href="Corporate Structure.html">Corporate Structure </a></li>
-                  <li><a href="Career opportunity.html">Career Opportunity</a></li>
-                  <li><a href="Customer Review.html">Customer Reviews
-                  </a></li>
-                  
-                   <li><a href="#">Awards
-                  </a></li>
-                   <li><a href="Affiliation.html">Affiliations
-                  </a></li>
-                   <li><a href="#">Social Responsibility
-                  </a></li>
-                  <li><a href="Land wanted.html">Land Wanted
-                  </a></li>
-                  <li><a href="#">Certification
-                  </a></li>
-                </ul>
-                </li>
+                  <li><a href="{% url 'homeapp:companyProfilepage' %}">Company profile</a></li>
+                  <li><a href="{% url 'homeapp:visionMissionpage' %}">Vission & Mission </a></li>
+                  <li><a href="{% url 'homeapp:teampage' %}">Meet The Team</a></li>
+                  <li><a href="{% url 'homeapp:corporateStructurepage' %}">Corporate Structure </a></li>
+                  <li><a href="{% url 'homeapp:careerOpportunitypage' %}">Career Opportunity</a></li>
+                  <li><a href="{% url 'homeapp:customerReviewspage' %}">Customer Reviews</a></li>
+                   <li><a href="{% url 'homeapp:awardpage' %}">Awards</a></li>
+                   <li><a href="{% url 'homeapp:affiliationpage' %}">Affiliations</a></li>
+                  <li><a href="{% url 'homeapp:Landwantedpage' %}">Land Wanted</a></li>
+                  <li><a href="{% url 'homeapp:certificationpage' %}">Certification</a></li>
+              </ul>
+              </li>
 
-            <li> <a href="about.html">Business
-             </a>
-              
+            <li> <a href="#">Business</a>
                 <ul class="dropdown">
-                  <li><a href="Biswasdeveloper.html">Biswas Developer & Construction Ltd.
-                  
-                  
-                  </a></li>
-                  <li><a href="biswasmaterial.html">Biswas Building Materials Ltd.
-                  
-        
-                  </a></li>
-                  <li><a href="biswasmaterial.html">Biswas Export & Import Ltd.
-                  
-                  </a></li>
-                  <li><a href="Consaltantb.html">Biswas Consultant Ltd.
-                  
-                  </a></li>
-                  <li><a href="biswastextile.html">Biswas Textile Ltd.
-                  
-                  
-                  </a></li>
-                  
-                   <li><a href="RMS.html">R.M.S Garments.</a></li>
+                  <li><a href="{% url 'homeapp:biswasDeveloperpage' %}">Biswas Developer & Construction Ltd.</a></li>
+                  <li><a href="{% url 'homeapp:biswasMaterialspage' %}">Biswas Building Materials Ltd. </a></li>
+                  <li><a href="{% url 'homeapp:biswasExportimportpage' %}">Biswas Export & Import Ltd. </a></li>
+                  <li><a href="{% url 'homeapp:biswasConsultantpage' %}">Biswas Consultant Ltd.</a></li>
+                  <li><a href="{% url 'homeapp:biswasTextilepage' %}">Biswas Textile Ltd.</a></li>
+                  <li><a href="{% url 'homeapp:biswasGarmentspage' %}">R.M.S Garments.</a></li>
+
                 </ul>
             </li>
 
-            <li> <a href="#">Media
-            </a> </li> 
-          
+            <li> <a href="#">Media</a>
             
-            <li> <a href="contact.html">Contact us</a> </li>
+              <ul class="dropdown">
+                <li><a href="">Blog</a></li>
+                <li><a href="{% url 'homeapp:eventpage' %}">Events</a></li>
+        
+ 
+              </ul>
+            
+            </li> 
+          
+            <li> <a href="{% url 'homeapp:contactpage' %}">Contact us</a> </li>
           </ul>
           
           <!-- GET A QUOTES -->
-          <div class="quotes"> <a href="#" class="customcolor"><i class="fa fa-pencil-square-o"></i> GET A QUOTES </a> </div>
+          <div class="quotes"> 
+            <a href="{% url 'homeapp:contactpage' %}" class="customcolor"><i class="fa fa-pencil-square-o"></i> GET A QUOTES </a> </div>
         </nav>
       </div>
     </header>

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+  <!-- SUB BANNER -->
+  <section class="sub-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>{{details.categories}}</h4>
+        <hr class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          
+        </ol>
+      </div>
+    </div>
+    <div class="scroll"> <a href="#content" class="go-down"></a></div>
+  </section>
+  
+  <!-- Content -->
+   
+    <h1 style="text-align: center; color:#3ab567";>{{ details.name }}</h1> 
+
+
+<div class="row">
+  <div class="column" style="background-color:#fff;">
+      <h3 style="text-align: center";>OVERVIEW OF {{ details.name }}</h3></br>
+       <h4 style="color: #3ab567" >  <i class="fa fa-clone" aria-hidden="true" > </i> Project Type</h4>
+    <p>  <i class="fa fa-check-square-o" aria-hidden="true"> </i>{{details.apartment_type}}</p></br>
+    
+    <h4 style="color: #3ab567" >  <i class="fa fa-clone" aria-hidden="true" > </i> Project Address </h4>
+    <p>  <i class="fa fa-check-square-o" aria-hidden="true"> </i> {{details.location}}</p></br>
+    <h4 style="color: #3ab567" >  <i class="fa fa-clone" aria-hidden="true" > </i> Floor Area </h4>
+    <p>  <i class="fa fa-check-square-o" aria-hidden="true"> </i> {{details.apartment_size}}</p>
+  </div>
+
+  {% if details.thumnail_image %}
+  <div class="column2" style="background-color:#fff;">
+    <h2></h2>
+    <img src="{{details.thumnail_image.url}}" alt="img" class="responsive" width="800" height="500" > 
+  </div>
+  {% endif %}
+</div>
+
+</br>
+    </br></br>
+
+
+{% endblock %}

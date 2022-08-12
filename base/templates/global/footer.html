@@ -16,10 +16,10 @@
   
             <div class="block-logo1">
               <div class="block-logo-content1">
-                <a href="#"><img src="{% static 'assets/fastest-growing-brands-Biswas-group.png' %}" alt="img"></a>
+                <a href="#"><img src="{% static 'assets/fastest-growing-brands-assure-group.png' %}" alt="img"></a>
               </div>
               <div class="block-logo-content1">
-                <a href="#"><img src="{% static 'assets/fastest-growing-brands-Biswas-group.png' %}" alt="img"></a>
+                <a href="#"><img src="{% static 'assets/fastest-growing-brands-assure-group.png' %}" alt="img"></a>
               </div>
               <div class="block-logo-content1">
                 <a href="#"><img src="{% static 'assets/aks.png' %}" alt="img"></a>
@@ -144,12 +144,14 @@
               <div class="tab-proparty1">
                 <ul class="nav  our-tab-1" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true"><img src="assets/land-owner_01.jpg" alt="img" class="mb-sm-3"><br> <span>Land Owner</span><br>XYZ,Dhaka 
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true">
+                    <img src="{% static 'assets/land-owner_01.jpg' %}" alt="img" class="mb-sm-3"><br> <span>Land Owner</span><br>XYZ,Dhaka 
                   
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false"> <img src="assets/land-owner_02.jpg" alt="img" class="mb-sm-3"><br> <span>Land Owner</span><br>XYZ,Dhaka 
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false"> 
+                    <img src="{% static 'assets/land-owner_02.jpg' %}" alt="img" class="mb-sm-3"><br> <span>Land Owner</span><br>XYZ,Dhaka 
                   </a>
                 </li>
                 </ul>
@@ -212,31 +214,13 @@
               <div class="footer-item">
                 <div class="footer-title">Businesses</div>
                 <ol class="footer-list">
-                 
-               <li><a href="Biswasdeveloper.html">Biswas Developer & Construction Ltd.
-                    
-                    
-                    </a></li>
-                    <li><a href="biswasmaterial.html">Biswas Building Materials Ltd.
-                    
-          
-                    </a></li>
-                    <li><a href="biswasmaterial.html">Biswas Export & Import Ltd.
-                    
-                    </a></li>
-                    <li><a href="Consaltantb.html">Biswas Consultant Ltd.
-                    
-                    </a></li>
-                    <li><a href="biswastextile.html">Biswas Textile Ltd.
-                    
-                    
-                    </a></li>
-                    
-                                      <li><a href="RMS.html">R.M.S Garments.
-                    
-                    
-                    </a></li>
-                </ol>
+                    <li><a href="{% url 'homeapp:biswasDeveloperpage' %}">Biswas Developer & Construction Ltd.</a></li>
+                    <li><a href="{% url 'homeapp:biswasMaterialspage' %}">Biswas Building Materials Ltd. </a></li>
+                    <li><a href="{% url 'homeapp:biswasExportimportpage' %}">Biswas Export & Import Ltd. </a></li>
+                    <li><a href="{% url 'homeapp:biswasConsultantpage' %}">Biswas Consultant Ltd.</a></li>
+                    <li><a href="{% url 'homeapp:biswasTextilepage' %}">Biswas Textile Ltd.</a></li>
+                    <li><a href="{% url 'homeapp:biswasGarmentspage' %}">R.M.S Garments.</a></li>
+             </ol>
               </div>
             </div>
   

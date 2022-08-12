@@ -1,0 +1,108 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- SUB BANNER -->
+  <section class="sub-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>BLOG</h4>
+        <hr class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+        </ol>
+          <li class="active">BLOG</li>
+      </div>
+    </div>
+    <div class="scroll"> <a href="#content" class="go-down"></a></div>
+  </section>
+  
+  <!-- Content -->
+
+    <section class="padding-top-50"> 
+      <div class="container"> 
+        <div class="row">
+         <div class="col-md-12 text-center">
+           <div class="Assure-secton-area">
+             <div class="assure-head">
+                 <p>Career Opportunities @ Biswas Group Ltd</p>
+              <h1>Real Estate Expert? | Join the Team | Apply Now!</h1>
+              <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="h4">At Biswas Group Ltd, leadership and innovation come naturally. Our team has constantly transformed to meet the changing landscape of the marketplace, serving the customers with quality residential apartments, commercial spaces, and great customer support & service. It continues today with innovations that consistently reinvent the business and our team as we strive for raising our standards for quality, safety, and sustainability.</p>
+                <p class="h4"><em>*We are an Equal Opportunity Employer and all inquiries are kept confidential.</em></p>
+                <p class="h4">Fill out the form below to submit your resume and one of our hiring managers will contact you if we have an available position that matches your resume.</p>
+              
+              
+                <div class="from-area">
+                <form class="jobop" action="" method="POST" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  <table id="content-form">
+                      <tbody>
+                          <tr>
+                              <td colspan="2" class="small col2">
+                                  Faild with (*) are required
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="big">Position Name :  </td>
+                              <td>  <input type="text" name="PositionName" maxlength="100" size="30"></td>
+                          </tr>
+
+                          <tr>
+                              <td class="big">Full Name : *</td>
+                              <td><input type="text" name="name" maxlength="100" size="30"></td>
+                          </tr>
+
+                          <tr>
+                              <td class="big">Phone Number : *</td>
+                              <td><input type="text" name="number" maxlength="100" size="30"></td>
+                          </tr>
+
+                          <tr>
+                              <td class="big">Email : *</td>
+                              <td><input type="email" name="email" maxlength="100" size="30"></td>
+                          </tr>
+
+                          <tr>
+                              <td class="big">Message</td>
+                              <td><textarea name="message" rows="15" cols="55"></textarea></td>
+                          </tr>
+
+                          <tr>
+                              <td class="big">Upload Resume (optional)</td>
+                              <td><input name="file" type="file" >
+                                  {% comment %} <small class="small">
+                                      max: 2mb <br> 
+                                  </small> {% endcomment %}
+                              
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="big"></td>
+                              <td class="small col2"><input type="submit" name="submit" Value="Apply now" ></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
+
+
+
+
+      

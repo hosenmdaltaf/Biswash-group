@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+    .form-style{
+        padding: 10px;
+        border-radius: 5%;
+        height: 50px;
+        width: 100%;
+    }
+    .form-button-style{
+        padding: 10px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50%;
+    }
+    
+</style>
+
+  
+  <!-- SUB BANNER -->
+  <section class="sub-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>Contact</h4>
+        <hr class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Contact</li>
+        </ol>
+      </div>
+    </div>
+    <div class="scroll"> <a href="#content" class="go-down"></a></div>
+  </section>
+  
+  <!-- Content -->
+  <div id="content">
+    
+    <!-- LATEST WORK -->
+    <section class="contact-page padding-top-100 padding-bottom-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="headofcorporate text-center">
+              <h1>contact with Biswas group | corporate office</h1>
+              <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+            </div>
+          </div> 
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="office-content-left">
+              <div class="jabbar-tower-area">
+                <div class="icon-div">
+                  <icon><i class="fa fa-map-marker" aria-hidden="true"></i></icon>
+                </div>
+                <div class="jabbar-link">
+                  <a href="#"> House# B140</a><br>
+                  <a href="#">Road #22,New DOHS Mohakhali,</a><br>
+                  <a href="#">Dhaka 1212, Bangladesh.</a>
+                  <br><br>
+                
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="office-content-right">
+              <div class="teliphon-icon-area">
+                <div class="phone-icon">
+                  <icon><i class="fa fa-mobile" aria-hidden="true"></i></icon>
+                </div>
+                <div class="teliphone-number">
+                  <a href="#"> +880 1324-291441</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="bg-color padding-top-100 padding-bottom-100">
+      <div class="container">
+        <div class="bg-contact-img">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-head-title">
+                <div class="head-title">
+                  <h2>LEAVE YOUR MESSAGE HERE!</h2>
+                  <p>Please fill in your details below and one of our expert sales manager Will get back to you as soon as possible.</p>
+                  <p class="field">Fields with (*) are required.</p>
+                </div>
+              </div>
+
+                    <form action="" method="POST"> 
+                        {% csrf_token %}
+                            <input class="form-style" type="text" name="name" placeholder="Name"  required> <br></br>
+                            <input class="form-style" type="text" name="email" placeholder="email"  required> <br></br>
+                            <input  class="form-style" type="text" name="message" placeholder="Message"  required> <br></br>
+                        
+                            <input class="form-button-style" type="submit" value="Submit">
+                    </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </div>
+
+  <section class="bg-color-withe padding-top-100 padding-bottom-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="would-youlike22">
+            <div class="youlike22 text-center">
+              <h1>We Would Like to Hear from You. Call us Today!</h1>
+              <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+             </div>
+          </div>
+
+          <div class="like-contact-area text-center">
+            <ul>
+              <li>
+                <div class="like-text-area22 text-left">
+                  <div class="like-content">
+                    <div class="md-img-show">
+                      <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                    </div>
+                    <div class="like-text">
+                      <p>buy a property</p>
+                      <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>  +880 1324-291441 </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="like-text-area22 text-left">
+                  <div class="like-content">
+                    <div class="md-img-show">
+                      <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                    </div>
+                    <div class="like-text">
+                      <p>customer care</p>
+                      <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>  +880 1324-291444 </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="like-text-area22 text-left">
+                  <div class="like-content">
+                    <div class="md-img-show">
+                      <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                    </div>
+                    <div class="like-text">
+                      <p>land owner</p>
+                      <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>  +880 1324-291441 </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+         
+
+              <li>
+                <div class="like-text-area22 text-left">
+                  <div class="like-content">
+                    <div class="md-img-show">
+                      <img src="{% static 'assets/landlord-icon.png' %}" alt="img">
+                    </div>
+                    <div class="like-text">
+                      <p>service area</p>
+                      <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>  +880 1324-291445 </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+ 
+
+
+
+{% endblock %}

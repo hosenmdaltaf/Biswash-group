@@ -5,6 +5,7 @@ app_name='projectapp'
 
 urlpatterns = [
     path('cat/<int:pk>/', views.projectpage, name='catDetailspage'),
-    path('status/<int:pk>/', views.project_status_filter, name='project_statuspage'),  
+    # path('status/<int:pk>/', views.project_status_filter, name='project_statuspage'),  
+    path('project_details/<int:pk>/', views.projectdetails, name='projectdetailspage'),  
     
 ]
