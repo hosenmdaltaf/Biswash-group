@@ -1,0 +1,63 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <!-- SUB BANNER -->
+  <section class="sub-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>BLOG</h4>
+        <hr class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+        </ol>
+          <li class="active">BLOG</li>
+      </div>
+    </div>
+    <div class="scroll"> <a href="#content" class="go-down"></a></div>
+  </section>
+  
+  <!-- Content -->
+
+      <section class="padding-top-100 padding-bottom-100"> 
+        <div class="container"> 
+        <div class="row">
+
+        {% for blog in blogs  %}
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <article class="single-blog text-center">
+                {% if blog.image %}
+              <div class="news-image">
+                  <img src="{{blog.image.url }}" alt="img">
+              </div>
+              {% endif %}
+              <div class="blog-content">
+                <div class="blog-meta">{{blog.post_date}}</div>
+                <p class="blog-title">{{blog.title}}</p>
+                <p>{{blog.content|truncatechars_html:100|safe}}</p>
+
+                <span class="link">
+                  Learn More 
+                    <span class="arrow">>></span>
+                  </span>
+              </div>
+              <a href="{% url 'blogpage:blog_details' blog.pk  %}">
+                <span class="d-none">Read the Full News</span>
+              </a>
+            </article>
+          </div>
+          {% endfor %}
+
+     </div>
+    </div>
+  </section>
+
+
+
+{% endblock %}
+
+

@@ -1,4 +1,5 @@
 from email import message
+from turtle import title
 from django.db import models
 
 # Create your models here.
@@ -21,3 +22,4 @@ class Career(models.Model):
 
     def __str__(self):
         return str(self.name)
+

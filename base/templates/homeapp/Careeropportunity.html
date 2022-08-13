@@ -4,6 +4,12 @@
 
 {% block content %}
 
+<style>
+  .inputstyle{
+    height: 40px;
+  }
+</style>
+
   <!-- SUB BANNER -->
   <section class="sub-bnr">
     <div class="position-center-center">
@@ -54,22 +60,22 @@
                           </tr>
                           <tr>
                               <td class="big">Position Name :  </td>
-                              <td>  <input type="text" name="PositionName" maxlength="100" size="30"></td>
+                              <td>  <input class="inputstyle" type="text" name="PositionName" maxlength="100" size="30"></td>
                           </tr>
 
                           <tr>
                               <td class="big">Full Name : *</td>
-                              <td><input type="text" name="name" maxlength="100" size="30"></td>
+                              <td><input class="inputstyle" type="text" name="name" maxlength="100" size="30"></td>
                           </tr>
 
                           <tr>
                               <td class="big">Phone Number : *</td>
-                              <td><input type="text" name="number" maxlength="100" size="30"></td>
+                              <td><input class="inputstyle" type="text" name="number" maxlength="100" size="30"></td>
                           </tr>
 
                           <tr>
                               <td class="big">Email : *</td>
-                              <td><input type="email" name="email" maxlength="100" size="30"></td>
+                              <td><input class="inputstyle" type="email" name="email" maxlength="100" size="30"></td>
                           </tr>
 
                           <tr>
@@ -78,17 +84,19 @@
                           </tr>
 
                           <tr>
-                              <td class="big">Upload Resume (optional)</td>
+                              <td class="big">Upload Resume </td>
                               <td><input name="file" type="file" >
                                   {% comment %} <small class="small">
                                       max: 2mb <br> 
                                   </small> {% endcomment %}
                               
                               </td>
-                          </tr>
+                          </tr> 
                           <tr>
                               <td class="big"></td>
-                              <td class="small col2"><input type="submit" name="submit" Value="Apply now" ></td>
+                              <td class="small col2">
+                                <input type="submit" name="submit" Value="Apply now" >
+                              </td>
                           </tr>
                       </tbody>
                   </table>

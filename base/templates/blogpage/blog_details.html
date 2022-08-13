@@ -1,0 +1,58 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+ 
+  <!-- SUB BANNER -->
+  <section class="sub-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h4>BLOG</h4>
+        <hr class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+        </ol>
+          <li class="active">BLOG</li>
+      </div>
+    </div>
+    <div class="scroll"> <a href="#content" class="go-down"></a></div>
+  </section>
+  
+  <!-- Content -->
+
+  <section class="padding-top-100"> 
+    <div class="container"> 
+      <div class="row">
+       <div class="col-md-12 text-center">
+         <div class="Assure-secton-area">
+           <div class="assure-head">
+            <h1>{{object.title}}</h1>
+
+            {% if object.image %}
+            <div class="news-image">
+              <img src="{{object.image.url }}" alt="img">
+          </div>
+          {% endif %}
+
+            <div class="assure-text">
+              {% comment %} <p></p> {% endcomment %}
+             {{object.content|safe}}
+            </div>
+            <div class="blog-title">
+              <p>{{object.post_date}}</p>
+            </div>
+            <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+           </div>
+           
+         </div>
+       </div>
+      </div>
+    </div>
+  </section>
+
+
+
+{% endblock %}
