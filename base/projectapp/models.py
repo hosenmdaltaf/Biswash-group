@@ -29,7 +29,7 @@ class Project(models.Model):
     CATEGORY_CHOICES = (
     ("Ongoing", "Ongoing"),
     ("Upcoming", "Upcoming"),
-    ("Complated", "Complated"),
+    ("Completed", "Completed"),
     )
 
     name = models.CharField(max_length=200,help_text="name of the project")
@@ -59,9 +59,7 @@ class Project(models.Model):
         if self.thumnail_image != '':
             return mark_safe('<img src="%s%s" width="50" height="50" />' % (f'{settings.MEDIA_URL}', self.thumnail_image))
 
-
-
-class ProjectImages(models.Model):
+class ProjectImages(models.Model): 
     case = models.ForeignKey(Project,on_delete=models.CASCADE,null=True,blank=True)
     images = models.ImageField(upload_to="file_upload", null = True, blank = True,help_text='upload images for project')
     text = models.CharField(max_length=255,help_text='text must be in 255 character')

@@ -47,7 +47,55 @@
 </div>
 
 </br>
-    </br></br>
 
+
+
+<section class=" light-gray-bg padding-top-100 padding-bottom-100">
+  <div class="container"> 
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="Looking-secton-area text-center">
+          <div class="loking-head">
+           <!-- <span>Looking For The</span> -->
+           <h1>Our Project Gallery</h1>
+           <img src="{% static 'assets/heading-arrow.png' %}" alt="img">
+          </div>
+
+        </div>
+        <div class="padding-30px">
+        <div class="row">
+     
+          {% for p in details.projectimages_set.all %}
+          <div class="col-md-4 col-sm-6">
+            <div class="all-area-hold">
+              <div class="container2">
+                {% if p.images %}
+                <img src="{{p.images.url}}" alt="Avatar" class="image">
+                {% endif %}
+                <div class="overlay">
+                  <div class="head-of text-center">
+                    <h5>{{p.text}}</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="footer-text text-center">
+                <a href="#">{{p.text}}</a>
+              </div> -->
+          </div>
+          </div>
+          {% endfor %}
+          
+        </div>
+      </div>
+            
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+    </br></br>
 
 {% endblock %}

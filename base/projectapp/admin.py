@@ -8,7 +8,15 @@ from mptt.admin import MPTTModelAdmin
 admin.site.register(Category, MPTTModelAdmin)
 
 
+class ProjectImagesAdmin(admin.StackedInline):
+    model = ProjectImages
+
+
 class Projectlist(admin.ModelAdmin):
     list_display = ('name','categories','image_tag','project_status','location')
+    inlines = [ProjectImagesAdmin]
 admin.site.register(Project,Projectlist)
+
+
+
 

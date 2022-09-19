@@ -9,7 +9,7 @@ def projectpage(request,pk):
     object = Category.objects.get(pk=pk)
     ongoingProjects = object.project_set.all().filter(project_status='Ongoing')
     upcomingProjects = object.project_set.all().filter(project_status='Upcoming')
-    complatedProjects = object.project_set.all().filter(project_status='Complated')
+    complatedProjects = object.project_set.all().filter(project_status='Completed')
     context={
        'object':object,
        'ongoingProjects':ongoingProjects,
